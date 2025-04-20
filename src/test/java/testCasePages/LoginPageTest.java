@@ -1,47 +1,19 @@
 package testCasePages;
 
 import org.testng.annotations.Test;
-
 import org.testng.annotations.BeforeClass;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.AssertJUnit;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Ignore;
-import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
-import org.testng.asserts.SoftAssert;
 import base.TBase;
 import pages.LoginPage;
 import java.awt.AWTException;
-import java.awt.Point;
-import java.awt.Robot;
-import java.io.File;
 import java.io.IOException;
-import java.sql.Driver;
-import java.time.Duration;
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
-import java.util.concurrent.TimeUnit;
 
 public class LoginPageTest extends TBase{
 
@@ -59,7 +31,6 @@ public class LoginPageTest extends TBase{
 	@Test(priority = 1,enabled = false)
 	public void validateCurrentUrl()
 	{
-		SoftAssert softAssert = new SoftAssert();
 		String cURL = loginpage.getCurrentUrl();
 		AssertJUnit.assertEquals(cURL,"https://parabank.parasoft.com/parabank/index.htm");
 	
@@ -68,7 +39,7 @@ public class LoginPageTest extends TBase{
 	@Test(dependsOnMethods = "vcheckInvalidLogin",enabled = false)
 	public void validateTitle()
 	{
-		SoftAssert softAssert = new SoftAssert();
+	
 		String TitleVerify = loginpage.getPageTitle();
 		AssertJUnit.assertEquals(TitleVerify,"ParaBank | Errorsss");
 		if (driver.getTitle().equals("ParaBank | Errorsss")) {
@@ -143,7 +114,7 @@ public class LoginPageTest extends TBase{
 	{
 		driver.get("https://www.amazon.in/?&tag=googhydrabk1-21&ref=pd_sl_7hz2t19t5c_e&adgrpid=155259815513&hvpone=&hvptwo=&hvadid=676742245123&hvpos=&hvnetw=g&hvrand=12706191631117004662&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9062116&hvtargid=kwd-10573980&hydadcr=14453_2367553");
 
-		driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
+	//	driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
 		WebElement dropd = driver.findElement(By.xpath("//select[@id='searchDropdownBox']"));
 		Select sd = new Select(dropd);
 		List<WebElement> dpd = sd.getOptions();
@@ -178,7 +149,7 @@ public class LoginPageTest extends TBase{
 	@Test(enabled=false)
 	public void s() {
 		driver.get("https://www.amazon.com/");
-		driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
+	//	driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
 		driver.navigate().refresh();
 		List<WebElement> s = driver.findElements(By.xpath("//*[starts-with(@id,'desktop')]"));
 		
@@ -198,7 +169,7 @@ public class LoginPageTest extends TBase{
 	{
 		String expectedSearchTerm = "Pune, India";
 		driver.get("https://www.makemytrip.com/flights/");
-		driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
 		WebElement d = driver.findElement(By.xpath("//*[@id='fromCity']"));
 	//	WebDriverWait s = new WebDriverWait(driver,120);
 	//	s.until(ExpectedConditions.visibilityOf(d));
@@ -240,7 +211,7 @@ public class LoginPageTest extends TBase{
 			
 			for(int j=0;j<totalColsCount;j++)
 			{
-				String s = totalCols.get(j).getText();
+			//	String s = totalCols.get(j).getText();
 				if(totalCols.get(j).getText().contains("Deepak Fertilisers"))
 				{
 					String data12 = driver.findElement(By.xpath("//table[@class='dataTable']/tbody/tr/td[4]")).getText();
@@ -254,7 +225,7 @@ public class LoginPageTest extends TBase{
 	public void oranage() throws InterruptedException
 	{
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-		driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
+	//	driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys("Admin");
 		driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("admin123");
 		driver.findElement(By.xpath("//button[@type='submit']")).submit();

@@ -1,14 +1,10 @@
 package testCasePages;
 
 import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Ignore;
-import org.testng.annotations.Test;
 
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Ignore;
 import base.TBase;
-import pages.LoginPage;
 import pages.RegisterPage;
 
 @Ignore
