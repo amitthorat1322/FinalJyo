@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import base.TBase;
 import pages.AdminPage;
 
+#amit 
 public class AdminPageTest extends TBase{
 
 	AdminPage adminpage;
