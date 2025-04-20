@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Project]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" name="Practice Test(failed)">
+    <parameter name="name" value="jyoti"/>
+    <parameter name="caddress" value="pune"/>
+    <parameter name="email" value="jyoti@123"/>
+    <parameter name="paddress" value="pune"/>
+    <classes>
+      <class name="TestResult.PracticePageTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="tear"/>
+          <include name="initalization"/>
+          <include name="validateByParameters" invocation-numbers="0"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- TestResult.PracticePageTest -->
+    </classes>
+  </test> <!-- Practice Test(failed) -->
+</suite> <!-- Failed suite [Project] -->

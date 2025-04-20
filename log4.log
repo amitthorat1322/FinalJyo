@@ -1,0 +1,78 @@
+Test Executed Method is:-CheckTable
+Test Started: CheckTable
+Test Exceution forCheck TableStaretd
+Test Execution forCheck TableEnded
+Method passed:-CheckTable
+Test Executed Method is:-UploadFile
+Test Started: UploadFile
+Method failed:-UploadFile
+Test Executed Method is:-dis
+Test Started: dis
+Method failed:-dis
+Test Executed Method is:-dis
+Test Started: dis
+Method failed:-dis
+Test Executed Method is:-dis
+Test Started: dis
+Method failed:-dis
+Test Executed Method is:-dis
+Test Started: dis
+Method failed:-dis
+onFinish method finished
+Test Executed Method is:-CheckTable
+Test Started: CheckTable
+Test Executed Method is:-UploadFile
+Test Exceution forCheck TableStaretd
+Test Started: UploadFile
+Method passed:-UploadFile
+Method failed:-CheckTable
+Test Executed Method is:-dis
+Test Started: dis
+Method passed:-dis
+Test Executed Method is:-dis
+Test Started: dis
+Method passed:-dis
+Test Executed Method is:-dis
+Test Started: dis
+Method passed:-dis
+Test Executed Method is:-dis
+Test Started: dis
+Method failed:-dis
+onFinish method finished
+Test Executed Method is:-CheckTable
+Test Started: CheckTable
+Test Exceution forCheck TableStaretd
+Test Execution forCheck TableEnded
+Method passed:-CheckTable
+Test Executed Method is:-UploadFile
+Test Started: UploadFile
+Method passed:-UploadFile
+Test Executed Method is:-dis
+Test Started: dis
+Method failed:-dis
+Test Executed Method is:-dis
+Test Started: dis
+Method failed:-dis
+Test Executed Method is:-dis
+Test Started: dis
+Test Executed Method is:-CheckTable
+Test Started: CheckTable
+Test Exceution forCheck TableStaretd
+Test Execution forCheck TableEnded
+Method passed:-CheckTable
+Test Executed Method is:-UploadFile
+Test Started: UploadFile
+Method passed:-UploadFile
+Test Executed Method is:-dis
+Test Started: dis
+Method passed:-dis
+Test Executed Method is:-dis
+Test Started: dis
+Method passed:-dis
+Test Executed Method is:-dis
+Test Started: dis
+Method passed:-dis
+Test Executed Method is:-dis
+Test Started: dis
+Method failed:-dis
+onFinish method finished
